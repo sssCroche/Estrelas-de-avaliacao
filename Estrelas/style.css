@@ -1,0 +1,26 @@
+.avaliacao {
+    display: flex;
+}
+
+.star-icon {
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 50px;
+}
+
+.star-icon::before {
+    content: "\2606";
+}
+
+.star-icon.ativo::before {
+    content: "\2605";
+}
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover~.star-icon::before {
+    content: "\2606";
+}
